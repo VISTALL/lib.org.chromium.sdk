@@ -283,7 +283,7 @@ public abstract class AsyncFuture<T> {
       CallbackSemaphore callbackSemaphore = new CallbackSemaphore();
       RelayOk relayOk = getAsync(callback, callbackSemaphore);
       callbackSemaphore.acquireDefault(relayOk);
-      return callback.get();
+      return (T) callback.get();
     }
 
     @Override

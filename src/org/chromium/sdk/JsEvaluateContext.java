@@ -7,7 +7,6 @@ package org.chromium.sdk;
 import java.util.Map;
 
 import org.chromium.sdk.util.MethodIsBlockingException;
-import org.chromium.sdk.wip.EvaluateToMappingExtension;
 
 /**
  * A context in which watch expressions may be evaluated. Typically corresponds to stack frame

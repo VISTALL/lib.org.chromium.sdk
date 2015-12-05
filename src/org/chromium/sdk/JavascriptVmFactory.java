@@ -8,12 +8,9 @@ import java.net.SocketAddress;
 import java.util.logging.Logger;
 
 import org.chromium.sdk.internal.JavascriptVmFactoryImpl;
-import org.chromium.sdk.wip.WipBrowser;
-import org.chromium.sdk.wip.WipBrowserFactory;
 
 /**
- * A factory for {@link JavascriptVm} instances. Note that {@link WipBrowser} instances are
- * created in a specialized class {@link WipBrowserFactory}.
+ * A factory for {@link JavascriptVm} instances.
  */
 public abstract class JavascriptVmFactory {
   /**
