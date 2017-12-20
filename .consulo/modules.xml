@@ -1,43 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
+<project>
   <component name="ModuleManager">
     <modules>
-      <module name="lib.org.chromium.sdk" dirurl="file://$PROJECT_DIR$" current-layer="static">
-        <module-layer name="dynamic">
-          <extension id="java" sdk-module-name="" sdk-name="1.6" language-level-module-name="" language-level-name="JDK_1_6" special-dir-location="SOURCE_DIR" />
+      <module name="lib.org.chromium.sdk" dirurl="file://$PROJECT_DIR$" current-layer="Default">
+        <module-layer name="Default">
+          <extension id="java" sdk-name="1.8 with tools" language-level-name="JDK_1_6" bytecode-version="1.6" />
+          <extension id="maven" />
           <content url="file://$MODULE_DIR$">
-            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
-            <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src" />
-            <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src-dynamic-impl/bridge" />
-            <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src-dynamic-impl/parser" />
+            <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src/main/java" />
+            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/target" />
           </content>
           <orderEntry type="module-extension-sdk" extension-id="java" />
           <orderEntry type="sourceFolder" />
-          <orderEntry type="module-library">
-            <library>
-              <binaries>
-                <root url="jar://$MODULE_DIR$/lib/json_simple/json_simple-1.1.jar!/" />
-              </binaries>
-            </library>
-          </orderEntry>
-        </module-layer>
-        <module-layer name="static">
-          <extension id="java" sdk-module-name="" sdk-name="1.6" language-level-module-name="" language-level-name="JDK_1_6" special-dir-location="SOURCE_DIR" />
-          <content url="file://$MODULE_DIR$">
-            <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
-            <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src" />
-            <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src-static-impl/bridge" />
-            <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src-static-impl/generated" />
-          </content>
-          <orderEntry type="module-extension-sdk" extension-id="java" />
-          <orderEntry type="sourceFolder" />
-          <orderEntry type="module-library">
-            <library>
-              <binaries>
-                <root url="jar://$MODULE_DIR$/lib/json_simple/json_simple-1.1.jar!/" />
-              </binaries>
-            </library>
-          </orderEntry>
+          <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
+          <orderEntry type="library" name="Maven: junit:junit:4.10" level="project" />
+          <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
         </module-layer>
       </module>
     </modules>

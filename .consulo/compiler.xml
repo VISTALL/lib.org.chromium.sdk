@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
+<project>
+  <component name="CompilerManager" url="file://$PROJECT_DIR$/out">
+    <module name="lib.org.chromium.sdk" exclude="false">
+      <output url="file://$PROJECT_DIR$/target/classes" type="PRODUCTION" />
+      <output url="file://$PROJECT_DIR$/target/classes" type="PRODUCTION_RESOURCE" />
+      <output url="file://$PROJECT_DIR$/target/test-classes" type="TEST" />
+      <output url="file://$PROJECT_DIR$/target/test-classes" type="TEST_RESOURCE" />
+    </module>
+  </component>
   <component name="JavaCompilerConfiguration" compiler="JavacCompiler">
     <annotation-processing>
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Annotation profile for lib.org.chromium.sdk" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="lib.org.chromium.sdk" />
+      </profile>
     </annotation-processing>
-  </component>
-  <component name="ResourceCompilerConfiguration">
-    <resourceExtensions />
   </component>
 </project>
